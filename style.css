@@ -8,6 +8,11 @@
   src: url(fonts/BodoniFLF-Roman.ttf);
 }
 
+html, body, header {
+  min-height: 100% !important;
+  height: 100%;
+}
+
 body {
   background-color: #edf3ed;
   margin: 0;
@@ -28,43 +33,65 @@ ul {
 }
 
 /* navbar */
-aside {
-  margin: 20px 30px;
+header {
+  float: left;
+  margin: 10px 30px;
 }
 
-aside #logo {
+header #logo {
   color: #002658;
   font-family: brandon_grotesque;
   margin: 0;
   padding: 0;
 }
 
-aside nav {
+header nav {
   margin: 0;
 }
 
-aside li {
+header li {
   display: block;
   font-family: brandon_grotesque;
   padding: 5px 0;
+  text-transform: uppercase;
 }
 
-aside li:hover, aside a:hover {
+header li span {
+  cursor: pointer;
+}
+
+header li span:hover, header a:hover {
   color: #d0b33a;
   text-decoration: none;
 }
 
-aside a {
+header a {
   color: #002658;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
-aside .dropdown {
+header .dropdown {
   padding: 0 10px;
+  display: none;
 }
 
-aside .dropdown li{
+ .dropdown li{
   color: #002658;
   font-family: bodoni;
+}
+
+/* gallery */
+
+#gallery {
+  float: right
+  margin: 20px;
+}
+
+#gallery .photo-col {
+  margin-top: 20px;
+}
+
+#gallery img {
+  margin: 10px 0 10px 0;
+  width: 100%;
 }
